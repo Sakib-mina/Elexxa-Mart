@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "556892926474",
+    "project_id": "elexaa-mart-5518e",
+    "storage_bucket": "elexaa-mart-5518e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556892926474:android:1e4c7894a01f14c84fa5f3",
+        "android_client_info": {
+          "package_name": "com.example.elexaamart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYVqJgak6zEkuwAWJemAl2g9TguGG6kZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

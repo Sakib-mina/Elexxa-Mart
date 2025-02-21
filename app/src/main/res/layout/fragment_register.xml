@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterFragment">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:gravity="center"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Enter your Full Name.."
+        android:inputType="textPersonName"
+        android:paddingStart="@dimen/_10sdp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="@string/email"
+        android:drawableEnd="@drawable/email_24"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"
+        tools:ignore="Autofill,RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Password"
+        android:drawableEnd="@drawable/eye_24"
+        android:inputType="textPassword"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/re_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:drawableEnd="@drawable/eye_24"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextContrastCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Street,City,Country.."
+        android:inputType="text"
+        android:paddingStart="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"
+        tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_46sdp"
+        android:background="@drawable/login_btn_back"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/already_have_an_account_sign_up"
+        android:textSize="@dimen/_14ssp"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>
