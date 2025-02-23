@@ -10,69 +10,136 @@
     tools:context=".LoginFragment">
 
 
-    <ImageView
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
         android:layout_width="@dimen/_150sdp"
         android:layout_height="@dimen/_150sdp"
-        android:src="@drawable/signup" />
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/login"
+        tools:ignore="VisualLintBounds" />
 
-    <EditText
-        android:id="@+id/email"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_45sdp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_24sdp"
-        android:layout_marginTop="@dimen/_46sdp"
-        android:background="@drawable/input_bg"
-        android:drawableEnd="@drawable/email_24"
-        android:ems="15"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:paddingHorizontal="@dimen/_10sdp"
-        android:textSize="@dimen/_15ssp"
-        tools:ignore="RtlSymmetry" />
+        android:layout_marginTop="@dimen/_32sdp"
+        android:hint="Email.."
+        tools:ignore="HardcodedText">
 
-    <EditText
-        android:id="@+id/password"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_45sdp"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_24sdp"
-        android:layout_marginTop="@dimen/_16sdp"
-        android:background="@drawable/input_bg"
-        android:drawableEnd="@drawable/lock_24"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:paddingHorizontal="@dimen/_10sdp"
-        android:textSize="@dimen/_15ssp"
-        tools:ignore="HardcodedText,RtlSymmetry" />
+        android:layout_marginTop="@dimen/_8sdp"
+        android:hint="Password.."
+        app:endIconMode="password_toggle"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textWebPassword"
+            android:maxEms="20"
+            android:minEms="8"
+            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
+        android:id="@+id/forgot_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="end"
         android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
         android:text="Forgot password?"
         android:textSize="@dimen/_12ssp"
-        android:layout_gravity="end"
-        android:layout_marginEnd="@dimen/_24sdp"/>
+        tools:ignore="HardcodedText" />
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginHorizontal="@dimen/_24sdp"
-        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_32sdp"
         android:background="@drawable/login_btn_back"
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="@dimen/_16ssp" />
+        android:textSize="@dimen/_16ssp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:gravity="center"
+        android:text="Or login with "
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="italic"
+        tools:ignore="HardcodedText,VisualLintBounds" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:orientation="horizontal"
+        tools:ignore="VisualLintBounds">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/google"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/fb_google_btn"
+            android:drawableStart="@drawable/search_resized"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="Google"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/facebook"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/fb_google_btn"
+            android:drawableStart="@drawable/fb_ic"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:text="Facebook"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/reg_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:text="@string/create_a_new_acccount_sign_up"
-        android:textSize="@dimen/_14ssp" />
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="italic"
+        tools:ignore="VisualLintBounds" />
 
 
 </LinearLayout>

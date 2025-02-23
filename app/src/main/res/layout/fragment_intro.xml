@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".IntroFragment">
@@ -12,7 +11,8 @@
         android:layout_width="@dimen/_200sdp"
         android:layout_height="@dimen/_150sdp"
         android:contentDescription="@string/app_icon"
-        android:src="@drawable/app_ic" />
+        android:src="@drawable/main_logo"
+        tools:ignore="VisualLintBounds" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,17 +22,29 @@
         android:text="@string/wellcome_to_elexaa_mart"
         android:textSize="@dimen/_18ssp" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:gravity="center"
+        android:text="@string/start_des"
+        android:textAlignment="center"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="TextSizeCheck" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login_btn"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginHorizontal="@dimen/_32sdp"
-        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_46sdp"
         android:background="@drawable/login_btn_back"
         android:text="Login"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="@dimen/_16ssp" />
+        android:textSize="@dimen/_16ssp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
 
 
     <androidx.appcompat.widget.AppCompatButton
@@ -44,6 +56,8 @@
         android:background="@drawable/reg_btn_b"
         android:text="Register"
         android:textAllCaps="false"
-        android:textSize="@dimen/_16ssp" />
+        android:textColor="#E1562A"
+        android:textSize="@dimen/_16ssp"
+        tools:ignore="HardcodedText,VisualLintButtonSize,VisualLintBounds" />
 
 </LinearLayout>

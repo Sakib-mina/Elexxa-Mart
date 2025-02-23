@@ -23,11 +23,14 @@ class IntroFragment : Fragment() {
     }
 
     private fun starter() {
-        binding.loginBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_introFragment_to_loginFragment)
-        }
-        binding.registerBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_introFragment_to_registerFragment)
+
+        with(binding) {
+            loginBtn.setOnClickListener {
+                findNavController().navigate(R.id.action_introFragment_to_loginFragment)
+            }
+            registerBtn.setOnClickListener {
+                findNavController().navigate(R.id.action_introFragment_to_registerFragment)
+            }
         }
     }
 }
