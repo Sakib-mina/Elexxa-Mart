@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".IntroFragment">
+    tools:context=".Views.starter.IntroFragment">
 
     <ImageView
         android:layout_width="@dimen/_200sdp"

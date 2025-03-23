@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RegisterFragment">
+    tools:context=".Views.auth.RegisterFragment">
 
     <TextView
         android:id="@+id/textView3"
@@ -17,6 +17,7 @@
         android:textSize="@dimen/_16ssp"
         android:textStyle="bold"
         tools:ignore="HardcodedText" />
+
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -76,27 +77,6 @@
             tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_24sdp"
-        android:layout_marginTop="@dimen/_8sdp"
-        android:hint="confirm password"
-        app:endIconMode="password_toggle"
-        tools:ignore="HardcodedText">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/c_pass_et"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textWebPassword"
-            android:maxEms="20"
-            android:minEms="8"
-            tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/textView2"
@@ -161,7 +141,7 @@
         tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,VisualLintButtonSize,VisualLintBounds" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/log_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
